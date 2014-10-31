@@ -3,6 +3,27 @@
 
 // $("#header").prepend(formattedName);
 // $("#header").prepend(formattedRole);
+var work = {
+	"jobs": [
+		{
+			"employer": "juankas chop chop",
+			"title": "phone whore",
+			"location": "Costa Rica",
+			"dates": "5 years",
+			"description": "called people for money"
+		}
+	]
+};
+
+var projects = {
+	"projects": [
+	{
+		"title": "bingo affiliate",
+		"dates": "nov '13-present",
+		"description": "made a website for bingo"
+	}
+  ]
+};
 
 var bio = {
 	"name": "John Doe",
@@ -20,6 +41,17 @@ var bio = {
 		],
 	"bioPic": "images/fry.jpg"
 };
+
+var education = {
+	"schools": [
+		{
+			"name": "Southern Illinois University",
+			"city": "Carbondale, Illinois",
+			"degree": "BA",
+			"major": ["Business"]
+		}
+	]
+}
 
 var name = bio.name;
 var formattedName = HTMLheaderName.replace("%data%", name);
@@ -62,3 +94,17 @@ var skills = bio.skills;
 var formattedSkills = HTMLskills.replace("%data%", skills);
 $("#header").append(HTMLskillsStart);
 $("#skills").append(formattedSkills);
+
+///////////////////////////////////////objects
+// var work = {};
+// work.position = "Web Developer";
+// work.employer = "DSAC";
+// work.years = 1.5;
+
+// var education = {};
+// education["name"] = "Southern Illinois University";
+// education["years"] = 4;
+// education["city"] = "Carbondale, IL, US";
+
+// $("#main").append(work["position"]);
+// $("#main").append(education.name);
